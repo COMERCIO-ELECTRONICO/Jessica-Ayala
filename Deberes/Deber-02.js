@@ -117,4 +117,4 @@ function contadorComass(ArregloParrafo) {
 console.log('-----------------------------------')
 console.log('-----------------------------------')
 console.log('-------- Contador de comas --------')
-console.log(contadorComass(ArregloParrafo))
+console.log(contadorComass(ArregloParrafo))           
