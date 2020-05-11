@@ -75,7 +75,9 @@ function listarUsuario(arreglo, cb) {
         mensaje: 'lista de usuario'
     })
 }
-
+ 
 listarUsuario(arregloUsuario, (respuestaMensaje) => {
     console.log(respuestaMensaje);
 })        
+
+

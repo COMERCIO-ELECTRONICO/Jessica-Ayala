@@ -1,0 +1,22 @@
+{
+  "name": "jessica-ayala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01-javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/COMERCIO-ELECTRONICO/Jessica-Ayala.git"
+  },
+  "author": "jessy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/COMERCIO-ELECTRONICO/Jessica-Ayala/issues"
+  },
+  "homepage": "https://github.com/COMERCIO-ELECTRONICO/Jessica-Ayala#readme",
+  "dependencies": {
+    "joi": "^14.3.1"
+  }
+}
