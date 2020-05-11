@@ -78,4 +78,4 @@ function listarUsuario(arreglo, cb) {
 
 listarUsuario(arregloUsuario, (respuestaMensaje) => {
     console.log(respuestaMensaje);
-})
+})        
