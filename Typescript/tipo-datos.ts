@@ -1,9 +1,9 @@
 // tipo datos
-const nombre: string = 'kevin';
+const nombre: string = 'jessy';
 const numero: number = 1;
 const Bool: boolean = true;
 const objetoUsuario: object = {
-    nombre: 'kevin',
+    nombre: 'jessy',
 }
 
 // arreglos
@@ -63,7 +63,7 @@ class hijo extends Persona {
     }
 }
 
-const hijoPersona = new hijo('kevin', 'jimenez');
+const hijoPersona = new hijo('jessy', 'Ayala');
 console.log(hijoPersona);
 
 
