@@ -7,12 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'front-end';
-  
-  titulo = 'soy tu padre';
-  nombreBoton = 'alerta';
-  imagen = 'https://www.dogalize.com/wp-content/uploads/2017/06/La-sverminazione-e-la-pulizia-del-cucciolo-del-cane-2-800x400-800x400.jpg';
-   
-  obtenerRespuestaHijo(evento) {
-  console.log(evento)
- }
+
+  tituloPadre = 'soy tu padre hola';
+  nombreBotonPadre = 'alertar!!!!!!!!';
+  imagenPadre = 'https://as.com/futbol/imagenes/2020/01/27/album/1580109965_448579_1580110002_album_grande.jpg';
+
+  datosHijo = {
+    tituloPadre: 'soy tu padre hola',
+    nombreBotonPadre: 'alertar!!!!!!!!',
+    imagenPadre: 'https://as.com/futbol/imagenes/2020/01/27/album/1580109965_448579_1580110002_album_grande.jpg',
+  };
+
+
+  obtenerRespuestaHjo(evento) {
+    console.log(evento)
+  }
 }
+
