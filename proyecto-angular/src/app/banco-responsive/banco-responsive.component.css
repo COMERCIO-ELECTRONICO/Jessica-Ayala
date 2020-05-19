@@ -1,0 +1,37 @@
+.menu-sup{
+  font: normal 10px/18px 'Muli', sans-serif;
+  color: #959595;
+  text-transform: uppercase;
+  display: block;
+  align-items: center;
+  cursor: pointer;
+}
+
+.imagen{
+  width: 100%;
+}
+.imagen > img{
+  width: 100%;
+}
+
+.menu{
+  color: #0A4B75;
+  font: bold 14px/14px 'Muli', sans-serif;
+  cursor: pointer;
+  border-bottom: 2px solid #0A4B75;
+}
+
+.banner img{
+  padding-bottom: 10px;
+}
+
+.imagen-contenido{
+  width: 100%;
+
+}
+
+.texto-contenido{
+  background-color: #006FB2;
+  color: white;
+  padding: 10px;
+}
