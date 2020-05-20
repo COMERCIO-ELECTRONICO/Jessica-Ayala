@@ -1,0 +1,23 @@
+<div class="container">
+    <p>home works!</p>
+  <button class="btn btn-primary" [routerLink]="['/login']">
+      boton del login
+  </button>
+  <button class="btn btn-primary" [routerLink]="['/usuario','listar']">
+      ingresar a listar
+  </button>
+  <button class="btn btn-primary"
+  (click)="Listar()"
+  >
+      ir a listar
+  </button>
+  <button class="btn btn-primary"
+  (click)="Editar()"
+  >  a editar
+  </button>
+  <button class="btn btn-primary"
+  (click)="Crear()"
+  > ir a crear
+  </button>
+  <img src="https://i.ytimg.com/vi/8PvyIAEfPgE/maxresdefault.jpg" alt="">
+</div>
