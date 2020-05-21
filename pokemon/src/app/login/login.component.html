@@ -1,4 +1,167 @@
-<p>login works!</p>
+<div class="formularios">
 <div class="container">
-  <img src="https://pm1.narvii.com/6375/b6914ab388480df3db5a4ee455a5fb780bc762ec_hq.jpg" alt="">
+  <h1>
+    Formulario de registro
+  </h1>
+  <form (ngSubmit)="obtenerFormulario(formularioUsuario)" #formularioUsuario="ngForm">
+
+    <div class="form-group">
+      <label for="nombre">Ingrese Nombre</label>
+      <input
+      type="text"
+      class="form-control"
+      id="name"
+      aria-describedby="namehelp"
+      [(ngModel)]="name"
+        name="name"
+        placeholder="ingrese un nombre"
+        minlength="3"
+        required
+        pattern="^[a-zA-Z]+$"
+        #campoName="ngModel">
+    </div>
+
+    <div
+    class="alert alert-danger"
+    role="alert"
+    *ngIf="(campoName.errors)
+    && campoName.dirty === true">
+      <p
+      *ngIf="campoName.errors.required">
+        Campo nombre requerido
+      </p>
+      <p
+      *ngIf="campoName.errors.minlength">
+        error ingrese minimo 3 digitos
+      </p>
+      <p
+      *ngIf="campoName.errors.pattern">
+        No es nombre
+      </p>
+
+    </div>
+    <div class="form-group">
+      <label for="apellido">Ingrese Apellido</label>
+      <input
+      type="text"
+      class="form-control"
+      id="apellido"
+      aria-describedby="apellidohelp"
+      [(ngModel)]="apellido"
+        name="apellido"
+        placeholder="ingrese un apellido"
+        minlength="3"
+        maxlength="10"
+        required
+        pattern="^[a-zA-Z]+$"
+        #campoApellido="ngModel">
+    </div>
+
+    <div
+    class="alert alert-danger"
+    role="alert"
+    *ngIf="(campoApellido.errors)
+    && campoApellido.dirty === true">
+      <p
+      *ngIf="campoApellido.errors.required">
+        Campo apellido requerido
+      </p>
+      <p
+      *ngIf="campoApellido.errors.minlength">
+        Error ingrese minimo 3 digitos
+      </p>
+      <p
+      *ngIf="campoApellido.errors.pattern">
+        No es apellido
+      </p>
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Dirección de correo</label>
+      <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      [(ngModel)]="email"
+        name="email"
+        placeholder="ejemplo"
+        minlength="3"
+        required
+        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+        #campoEmail="ngModel">
+
+    </div>
+    <div
+    class="alert alert-danger"
+    role="alert"
+    *ngIf="(campoEmail.errors)
+    && campoEmail.dirty === true">
+      <p
+      *ngIf="campoEmail.errors.required">
+        Campo email requerido
+      </p>
+      <p
+      *ngIf="campoEmail.errors.minlength">
+        Error ingrese mínimo 3 dígitos
+      </p>
+      <p
+      *ngIf="campoEmail.errors.pattern">
+        No es email
+      </p>
+
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">contraseña</label>
+      <input
+      type="password"
+      class="form-control"
+      id="exampleInput"
+      aria-describedby="emai"
+      [(ngModel)]="contrasena"
+        name="contrasena"
+        placeholder="****"
+        minlength="4"
+        maxlength="20"
+        required
+        #campoContrasena="ngModel">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">repita contraseña</label>
+      <input
+      type="password"
+      class="form-control"
+      id="repitacontrasena"
+      aria-describedby="emai"
+      [(ngModel)]="repitacontrasena"
+        name="repitacontrasena"
+        placeholder="****"
+        minlength="4"
+        maxlength="20"
+        required
+        #campoRepitaContrasena="ngModel">
+    </div>
+    <div
+    class="alert alert-danger"
+    role="alert"
+    *ngIf="(campoContrasena.value!=='')
+    &&(campoRepitaContrasena.value!=='')
+    &&(campoContrasena.value!==campoRepitaContrasena.value)">
+      <p>
+      Las contraseñas no son iguales
+      </p>
+
+
+    </div>
+    <button
+    [disabled]="formularioUsuario.invalid"
+    type="submit"
+    class="btn btn-primary">
+    Enviar</button>
+  </form>
+
+</div>
 </div>

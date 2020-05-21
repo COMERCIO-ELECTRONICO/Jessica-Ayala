@@ -3,16 +3,16 @@
   <h1>
     variables html #
   </h1>
-  <form (ngSubmit)="obtenerFormulario(formularioUsario)" #formularioUsario="ngForm">
+  <form (ngSubmit)="obtenerFormulario(formularioUsuario)" #formularioUsuario="ngForm">
 
     <h4>Estado formulario</h4>
     <h5>
       <pre>
-        valid: {{formularioUsario.valid}}
-        invalid: {{formularioUsario.invalid}}
-        dirty: {{formularioUsario.dirty}}
-        touched: {{formularioUsario.touched}}
-        untouched: {{formularioUsario.untouched}}
+        valid: {{formularioUsuario.valid}}
+        invalid: {{formularioUsuario.invalid}}
+        dirty: {{formularioUsuario.dirty}}
+        touched: {{formularioUsuario.touched}}
+        untouched: {{formularioUsuario.untouched}}
       </pre>
     </h5>
 
@@ -85,7 +85,7 @@
 
 
     <button
-    [disabled]="formularioUsario.invalid"
+    [disabled]="formularioUsuario.invalid"
     type="submit"
     class="btn btn-primary">
     Submit</button>

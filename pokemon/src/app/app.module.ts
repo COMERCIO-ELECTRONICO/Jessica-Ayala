@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './inicio/home/home.component';
 import { NoEncontradoComponent } from './inicio/no-encontrado/no-encontrado.component';
 import { UsuarioModule } from './usuario/usuario.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UsuarioModule } from './usuario/usuario.module';
   imports: [
     BrowserModule,
     AppRoutesComponent,
-    UsuarioModule
+    UsuarioModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

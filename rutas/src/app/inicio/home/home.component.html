@@ -1,12 +1,15 @@
-<p>home works!</p>
-<button [routerLink]="['/login']">
-    ir a login
-</button>
-<button [routerLink]="['/usuario','listar']">
-    ir a USAURIO LISTAR
-</button>
-<button
-(click)="irAUsuarioListar()"
->
-    ir a usuario con click
-</button>
+<div class="container">
+  <p>home works!</p>
+  <button class="btn btn-primary" [routerLink]="['/login']">
+      ir a login
+  </button>
+  <button class="btn btn-success" [routerLink]="['/usuario','listar']">
+      ir a USUARIO LISTAR
+  </button>
+  <button class="btn btn-warning"
+  (click)="irAUsuarioListar()"
+  >
+      ir a usuario con click
+  </button>
+</div>
+
