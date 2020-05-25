@@ -48,9 +48,17 @@ export class IloginComponent implements OnInit {
     if(this.pass === '1234'){
       alert(this.correo);
       if(this.seleccionadoValor === 'Jessy'){
-        alert('es estudiante');
+        alert('Es Estudiante');
         this._router.navigate(
           ['/estudiante','perfil']
+        )
+      }
+    }else if(this.pass === '4321'){
+      alert(this.correo);
+      if(this.seleccionadoValor === 'Dayana'){
+        alert('Es Profesor/a');
+        this._router.navigate(
+          ['/profesor','perfil']
         )
       }
     }else{
