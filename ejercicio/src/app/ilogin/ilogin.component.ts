@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/Router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ilogin',
@@ -19,7 +19,7 @@ export class IloginComponent implements OnInit {
   arregloResultado=[];
 
   constructor(
-    private readonly _router:Router,
+    private readonly _router: Router ,
   ) { }
 
   ngOnInit(): void {
