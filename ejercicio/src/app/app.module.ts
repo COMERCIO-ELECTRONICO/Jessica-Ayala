@@ -14,6 +14,8 @@ import { MatInputModule } from '@angular/material/input';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 import { UsuarioModule } from './usuario/usuario.module';
+import {HttpClientModule} from "@angular/common/http";
+import { LoginService } from './services/login.service';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,12 @@ import { UsuarioModule } from './usuario/usuario.module';
     FormsModule,
     MatInputModule,
     AutoCompleteModule,
-    UsuarioModule
+    UsuarioModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
