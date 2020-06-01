@@ -5,6 +5,7 @@ import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { IloginComponent } from './ilogin/ilogin.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
+import { LoginGuard } from './guards/login.guard';
 
 const rutas: Routes = [
   {
@@ -32,6 +33,7 @@ const rutas: Routes = [
   {
     path: 'login',
     component: IloginComponent,
+    canActivate: [LoginGuard]
   },
   {
     path: '',

@@ -21,7 +21,7 @@ export class IloginComponent implements OnInit {
 
   constructor(
     private readonly _router: Router ,
-    private readonly _loginService: LoginService
+    private readonly _loginService: LoginService,
   ) { }
 
   ngOnInit(): void {
@@ -55,7 +55,12 @@ export class IloginComponent implements OnInit {
   }
 
   ingresar(){
-    this._loginService.metodoPost(
+    console.log('guardar');
+    localStorage
+    .setItem('nombre',
+    JSON.stringify({nombre: 'Jessy'})
+    );
+    /* this._loginService.metodoPost(
       'http://localhost:1337/usuario',
       {
         nombre: "Jessy",
@@ -87,7 +92,7 @@ export class IloginComponent implements OnInit {
       }
     }else{
       alert('no ingresó');
-    }
+    } */
   }
 
   eliminarRegistroPorId(){
