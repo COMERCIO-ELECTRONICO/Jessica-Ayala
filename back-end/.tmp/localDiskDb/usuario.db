@@ -1,0 +1,2 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"nombre":"Dayana","correo":"dayan3","edad":22,"esCasado":false,"createdAt":1590682512671,"updatedAt":1590682512671,"id":1,"_id":1}
